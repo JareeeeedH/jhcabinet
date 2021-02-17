@@ -1,0 +1,70 @@
+
+.nav_text{
+    font-weight: bold;
+}
+
+.bg-cover{
+    background-size: cover;
+    background-position: center center
+}
+
+
+.spacing{
+    letter-spacing: 10px;
+}
+
+.btn-cart .badge{
+    position:absolute;
+  }
+
+
+.jumbo-bg{
+    background-image: url('../img/products_jumbo.jpg');
+    height: 496px;
+}
+
+.bg-lighter{
+    background-color: rgb(255, 255, 255, 0.3)
+}
+
+.item-tag{
+    position: absolute;
+    left:20px;
+    padding: 7px;
+    letter-spacing: 5px;
+    background-color: brown;
+    color: white;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+.item-heart{
+    position: absolute;
+    padding: 5px;
+    font-size: 30px;
+    right: 5px;
+    color: white;
+}
+
+
+
+@media (min-width: 768px){
+    .break-md-y{
+        margin-top: -24px;
+        margin-bottom: -24px;
+    }
+    
+    .break-md-x{
+        margin-right: -15px;
+        margin-left: -15px;
+
+    }
+    .writting-md-vertical{
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+    }
+
+    .vertical-content {
+        line-height: 2.5
+    }
+}

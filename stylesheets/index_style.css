@@ -1,0 +1,143 @@
+.font_1{
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+.font_2{
+    font-family: 'Reggae One', cursive;
+}
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.nav_text{
+    font-weight: bold;
+}
+
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+
+.rec_text{
+    font-size: 30px;
+    color: black;
+    writing-mode: vertical-lr;
+    position: absolute;
+    z-index: 99;
+    color: white;
+}
+
+.rec_image_1{
+    position: absolute; 
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+.rec_image_1::after{
+        content:'';
+        position: absolute;
+        right: -5px;
+        left: -5px;
+        top: -5px;
+        bottom: -5px;
+        background-image: url('../img/service_wine.jpg');
+        background-size: cover;
+        background-position: center center;
+        filter: blur(3px);
+    }
+
+.rec_image_2{
+    position: absolute; 
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+.rec_image_2::after{
+        content:'';
+        position: absolute;
+        right: -5px;
+        left: -5px;
+        top: -5px;
+        bottom: -5px;
+        background-image: url('../img/service_dj.jpg');
+        background-size: cover;
+        background-position: center center;
+        filter: blur(3px)
+    }
+
+    .rec_image_3{
+    position: absolute; 
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+.rec_image_3::after{
+        content:'';
+        position: absolute;
+        right: -5px;
+        left: -5px;
+        top: -5px;
+        bottom: -5px;
+        background-image: url('../img/service_travel.jpg');
+        background-size: cover;
+        background-position: center center;
+        filter: blur(3px)
+    }
+
+
+.spacing{
+    letter-spacing: 10px;
+}
+
+.btn-cart .badge{
+    position:absolute;
+  }
+
+.item-tag{
+    position: absolute;
+    left:20px;
+    padding: 7px;
+    letter-spacing: 5px;
+    background-color: brown;
+    color: white;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+.item-heart{
+    position: absolute;
+    padding: 5px;
+    font-size: 20px;
+    right: 5px;
+    color: #0f3057;
+}
+
+
+
+@media (min-width: 768px){
+    .break-md-y{
+        margin-top: -24px;
+        margin-bottom: -24px;
+    }
+    
+    .break-md-x{
+        margin-right: -15px;
+        margin-left: -15px;
+
+    }
+    .writting-md-vertical{
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+    }
+
+    .vertical-content {
+        line-height: 2.5
+    }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jared's Cabinet</title>
+
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <link rel="stylesheet" href="stylesheets/login_style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="">
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-transpatent">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo_1.jpg" height="40" class="d-inline-block align-top" alt="logo">
+                <span class="h3 px-2 mb-0 text-barMain">Jared's Cabinet</span>
+            </a>
+            <div class="dropdown order-md-1">
+                <button style="cursor:pointer" class="btn btn-cart text-barMain type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown">
+                    <i class="fas fa-wine-bottle fa-2x abs"></i>
+                    <span class="badge badge-danger">2</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" style="min-width:360px"
+                    aria-labelledby="dropdownMenuButton">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row"><i class="fas fa-trash-alt"></i></th>
+                                <th>1</th>
+                                <td>Ardbeg_10</td>
+                                <td>6瓶</td>
+                                <td class="text-right">6,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fas fa-trash-alt"></i></th>
+                                <th>2</th>
+                                <td>A'bunadh</td>
+                                <td>2瓶</td>
+                                <td class="text-right">3,200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a class="btn btn-primary btn-block" href="cart.html">結帳</a>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link nav_text" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav_text" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true">
+                            服務
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="products_whiskey.html">Whiskey</a>
+                            <a class="dropdown-item" href="#">Travel</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Party</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_text" href="login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <div class="container px-0">
+        <div class="row no-gutters justify-content-center">
+            <div class="col-md-5">
+                <div class="p5 bg-light">
+                    <div class="text-center p-5 bg-barSecond">
+                        <h1 class="mb-0 text-white">會員登入</h1>
+                    </div>
+                    <div class="d-md-none p-5">
+                        <div class="d-flex">
+                            <div class="col-4 p-2 border text-center social-form">Facebook</div>
+                            <div class="col-4 p-2 border text-center social-form">Yahoo!</div>
+                            <div class="col-4 p-2 border text-center social-form">Google</div>
+                        </div>
+                    </div>
+                    <div class="bg-barSecond p-5 pt-md-0">
+
+                        <div class="d-flex bg-light mb-2">
+                            <label class="p-3 mb-0" style="background: transparent;" for="user"><i class="fa-1x fas fa-user"></i></label>
+                            <input id="user" placeholder="E-mail" type="email" class="input_form">
+                        </div>
+
+                        <div class="d-flex bg-light mb-2">
+                            <label class="p-3 mb-0" style="background: transparent;" for="pw"><i class="fas fa-key"></i></label>
+                            <input id="pw" placeholder="Password" type="text" class="input_form">
+                        </div>
+
+                        <input id="check" type="checkbox">
+                        <label for="check" class="text-white">記住我</label>
+                    </div>
+                    
+                    <div class="text-center bg-warning">
+                        <h3 class="p-3">登入帳號</h3>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-5 py-5 d-none d-md-block">
+                <div class="bg-barMain p-3">
+                    <div class="">
+                        <div class="col h4 p-3 border-0 text-center mb-3 text-white">連結社群帳號</div>
+                        <div class="bg-white col h4 p-3 border text-center mb-3">Facebook</div>
+                        <div class="bg-white col h4 p-3 border text-center mb-3">Yahoo!</div>
+                        <div class="bg-white col h4 p-3 border text-center mb-3">Google</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="bg-barMain py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 d-flex align-items-center justify-content-center mb-3">
+                    <img src="img/logo_1.jpg" alt="logo" style="width:40px;">
+                    <span class="h4 text-white mb-0 mx-3">訂閱你我酒精的故事</span>
+                </div>
+                <div class="col-md-5">
+                    <div class="d-flex justify-content-between align-items-center bg-light">
+                        <label for="subicon" class="px-3 mb-0 text-success d-flex align-items-center"><i class="far fa-envelope-open fa-2x"></i></label>
+                        <input id="subicon" type="text;" style="border:none; outline:none; background-color: transparent;" class="w-100 p-2">
+                        <button class="btn btn-success rounded-0 py-2"><i class="fas fa-arrow-right"></i></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light p-2">
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-8">
+                    <div class="row">
+                        <div class="h2 col-12 mb-3 mb-5 mb-md-7">
+                            Jared's Cabinet
+                        </div>
+                        <div class="col-12 d-flex flex-column mb-3">
+                            <span>Tel: 07-571-8168</span>
+                            <span>Email: Rudrunking@gmail.com</span>
+                            <span>Address: ChiJin Dist, KH City,Taiwan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block writting-md-vertical spacing h2">
+                    <div>今天是個...</div>
+                    <div>  買醉的日子</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><i class="fab fa-facebook fa-2x mr-1"></i><i class="fab fa-instagram fa-2x"></i></div>
+                <div class="col-md-6">@2021 Jared's Cabinet All rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

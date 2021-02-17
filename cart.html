@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jared's Cabinet</title>
+
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <link rel="stylesheet" href="stylesheets/index_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="">
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-transpatent">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo_1.jpg" height="40" class="d-inline-block align-top" alt="logo">
+                <span class="h3 px-2 mb-0 text-barMain">Jared's Cabinet</span>
+            </a>
+            <div class="dropdown order-md-1">
+                <button style="cursor:pointer" class="btn btn-cart text-barMain type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown">
+                    <i class="fas fa-wine-bottle fa-2x abs"></i>
+                    <span class="badge badge-danger">2</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" style="min-width:360px"
+                    aria-labelledby="dropdownMenuButton">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row"><i class="fas fa-trash-alt"></i></th>
+                                <th>1</th>
+                                <td>Ardbeg_10</td>
+                                <td>6瓶</td>
+                                <td class="text-right">6,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fas fa-trash-alt"></i></th>
+                                <th>2</th>
+                                <td>A'bunadh</td>
+                                <td>2瓶</td>
+                                <td class="text-right">3,200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a class="btn btn-primary btn-block" href="cart.html">結帳</a>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link nav_text" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav_text" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true">
+                            服務
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="products_whiskey.html">Whiskey</a>
+                            <a class="dropdown-item" href="#">Travel</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Party</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_text" href="login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+
+                <h3 class="text-center bg-light p-1">購物車</h3>
+
+                <div class="container border-bottom py-3">
+                    <div class="row justify-content-between align-items-center mb-3">
+
+                        <div class="flex-grow-1 flex-md-grow-0 mr-2 mr-md-0">
+                            <div class="bg-dark bg-cover" style="background-image:url(img/product_4.jpg); ;min-width:110px; height:110px">
+                            </div>
+                        </div>
+
+ 
+                        <div class='d-md-flex d-block'>
+                            <div class="mx-1 mr-3">
+                                <div class="h5">Ardbeg10</div>
+                                <div class="h6">NT$1,000</div>
+                            </div>
+    
+                            <div class="d-flex align-items-center" style="width:145px">
+                                <div class="input-group w-100">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-info rounded-0 px-4">-</button>
+                                    </div>
+                                    <input type="text" class="text-center border-info form-control" value="6">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-info rounded-0 px-4">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-flex ml-auto">
+                            <span class="h6 mb-0 mr-3">NT$ 6,000</span>
+                            <i class="fas fa-trash"></i>
+                        </div>
+
+                     </div>
+
+                     <div class="row d-md-none">
+                         <div class="container border-top border-bottom p-2">
+                            <div class="d-flex justify-content-end">
+                                <div class="d-flex align-items-center">
+                                    <span class="h5 mb-0 mr-5">NT$ 6,000</span>
+                                    <i class="fas fa-trash"></i>
+                                </div>
+                            </div>
+                         </div>
+                     </div>
+                </div>
+                <div class="container border-bottom py-3">
+                    <div class="row justify-content-between align-items-center mb-3">
+
+                        <div class="flex-grow-1 flex-md-grow-0 mr-2 mr-md-0">
+                            <div class="bg-dark bg-cover" style="background-image:url(img/product_5.jpg); ;min-width:110px; height:110px">
+                            </div>
+                        </div>
+
+ 
+                        <div class='d-md-flex d-block'>
+                            <div class="mx-1 mr-3">
+                                <div class="h5">A'bunadh</div>
+                                <div class="h6">NT$1,600</div>
+                            </div>
+    
+                            <div class="d-flex align-items-center" style="width:145px">
+                                <div class="input-group w-100">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-info rounded-0 px-4">-</button>
+                                    </div>
+                                    <input type="text" class="text-center border-info form-control" value="2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-info rounded-0 px-4">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-flex ml-auto">
+                            <span class="h6 mb-0 mr-3">NT$ 3,200</span>
+                            <i class="fas fa-trash"></i>
+                        </div>
+
+                     </div>
+
+                     <div class="row d-md-none">
+                         <div class="container border-top border-bottom p-2">
+                            <div class="d-flex justify-content-end">
+                                <div class="d-flex align-items-center">
+                                    <span class="h5 mb-0 mr-5">NT$ 3,200</span>
+                                    <i class="fas fa-trash"></i>
+                                </div>
+                            </div>
+                         </div>
+                     </div>
+                </div>                
+            </div>
+            <div class="col-md-4 text-white">
+                <div class="bg-barSecond p-3">
+                    <h2 class="text-center">訂單摘要</h2>
+                    <hr style="border-top: 2px solid white">
+                    <div class="p-3 d-flex justify-content-between">
+                        <span>小計</span>
+                        <span>NT $9,200</span>
+                    </div>
+                    <div class="p-3 d-flex justify-content-between">
+                        <span>運費</span>
+                        <span>NT $300</span>
+                    </div>
+                    <div class="h3 p-3 d-flex justify-content-between">
+                        <span>總計</span>
+                        <span>NT $9,500</span>
+                    </div>
+                </div>
+                <a href="check_1.html">
+                    <div class="h3 p-3 bg-warning text-center">
+                        結帳
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="bg-barMain py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 d-flex align-items-center justify-content-center mb-3">
+                    <img src="img/logo_1.jpg" alt="logo" style="width:40px;">
+                    <span class="h4 text-white mb-0 mx-3">訂閱你我酒精的故事</span>
+                </div>
+                <div class="col-md-5">
+                    <div class="d-flex justify-content-between align-items-center bg-light">
+                        <label for="subicon" class="px-3 mb-0 text-success d-flex align-items-center"><i class="far fa-envelope-open fa-2x"></i></label>
+                        <input id="subicon" type="text;" style="border:none; outline:none; background-color: transparent;" class="w-100 p-2">
+                        <button class="btn btn-success rounded-0 py-2"><i class="fas fa-arrow-right"></i></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-light p-2">
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-8">
+                    <div class="row">
+                        <div class="h2 col-12 mb-3 mb-5 mb-md-7">
+                            Jared's Cabinet
+                        </div>
+                        <div class="col-12 d-flex flex-column mb-3">
+                            <span>Tel: 07-571-8168</span>
+                            <span>Email: Rudrunking@gmail.com</span>
+                            <span>Address: ChiJin Dist, KH City,Taiwan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block writting-md-vertical spacing h2">
+                    <div>今天是個...</div>
+                    <div>  買醉的日子</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><i class="fab fa-facebook fa-2x mr-1"></i><i class="fab fa-instagram fa-2x"></i></div>
+                <div class="col-md-6">@2021 Jared's Cabinet All rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
