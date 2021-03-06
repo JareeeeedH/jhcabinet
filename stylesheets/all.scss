@@ -1,3 +1,11 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "helpers/_variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// 客製
+@import "components/_index_style";
+@import "components/_products_w_style";
+@import "components/_check_style";
+@import "components/_login_style";
+

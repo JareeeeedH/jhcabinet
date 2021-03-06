@@ -1,0 +1,104 @@
+.font_1{
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+.font_2{
+    font-family: 'Reggae One', cursive;
+}
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.nav_text{
+    font-weight: bold;
+}
+
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+
+.rec_text{
+    font-size: 30px;
+    color: black;
+    writing-mode: vertical-lr;
+    position: absolute;
+    z-index: 99;
+    color: white;
+}
+
+.rec_image{
+    position: absolute; 
+    right: -3px;
+    left: -3px;
+    top: -3px;
+    bottom: -3px;
+    filter: blur(3px);
+}
+
+.rec_image:hover{
+    filter: blur(1px);
+}
+
+.a-link:hover
+{
+    border-bottom: 3px solid #0f3057;
+}
+
+
+.spacing{
+    letter-spacing: 10px;
+}
+
+.btn-cart .badge{
+    position:absolute;
+  }
+
+.item-tag{
+    position: absolute;
+    left:20px;
+    padding: 7px;
+    letter-spacing: 5px;
+    background-color: brown;
+    color: white;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+.item-heart{
+    position: absolute;
+    padding: 5px;
+    font-size: 10px;
+    right: 5px;
+}
+
+
+// 少部分使用到的顏色、比免於變數自定義、以class直接製作。
+$barSecond: #00587A;
+.bg-barSecond {background-color: $barSecond};
+.text-barSecond {color: $barSecond};
+
+
+
+
+@media (min-width: 768px){
+    .break-md-y{
+        margin-top: -24px;
+        margin-bottom: -24px;
+    }
+    
+    .break-md-x{
+        margin-right: -15px;
+        margin-left: -15px;
+
+    }
+    .writting-md-vertical{
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+    }
+
+    .vertical-content {
+        line-height: 2.5
+    }
+}

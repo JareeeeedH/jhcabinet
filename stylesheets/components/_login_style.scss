@@ -1,0 +1,48 @@
+
+.nav_text{
+    font-weight: bold;
+}
+
+.bg-cover{
+    background-size: cover;
+    background-position: center center
+}
+
+.btn-cart .badge{
+    position:absolute;
+  }
+
+.social-form{
+    font-weight: bold;
+    background-color: white;
+    color: #0f3057;
+}
+
+.input_form{
+    outline: none;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+
+}
+
+  @media (min-width: 768px){
+    .break-md-y{
+        margin-top: -24px;
+        margin-bottom: -24px;
+    }
+    
+    .break-md-x{
+        margin-right: -15px;
+        margin-left: -15px;
+
+    }
+    .writting-md-vertical{
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+    }
+
+    .vertical-content {
+        line-height: 2.5
+    }
+}

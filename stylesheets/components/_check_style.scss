@@ -1,0 +1,91 @@
+.nav_text{
+    font-weight: bold;
+}
+.bg-cover{
+    background-size: cover;
+    background-position: center center
+}
+
+.btn-cart .badge{
+    position:absolute;
+  }
+
+.jumbo-bg{
+    background-image: url('../img/success.jpg');
+    height: 496px;
+}
+
+.bg-lighter{
+    background-color: rgba(255, 255, 255, 0.3)
+}
+
+
+.line::after{
+    content:"";
+    position: absolute;
+    left:0;
+    right:0;
+    height: 1px;
+    top: 50%;
+    border: 1px solid white;
+}
+
+/* 0:還沒完成、 1當前步驟、 2完成 */
+.steps_1{
+    width:20px;
+    height:20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #0f3057;
+    z-index:1;
+    
+}
+
+.steps_1::after{
+    content:"";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.steps_0{
+    width:20px;
+    height:20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #0f3057;
+    z-index:1;
+}
+
+.steps_2{
+    width:22px;
+    height:22px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #0f3057;
+    z-index:1;
+    /* background-image: url('../img/done.svg'); */
+}
+
+@media (min-width: 768px){
+    .break-md-y{
+        margin-top: -24px;
+        margin-bottom: -24px;
+    }
+    
+    .break-md-x{
+        margin-right: -15px;
+        margin-left: -15px;
+
+    }
+    .writting-md-vertical{
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+    }
+
+    .vertical-content {
+        line-height: 2.5
+    }
+}

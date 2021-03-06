@@ -76,10 +76,12 @@ $theme-colors: () !default;
 $theme-colors: map-merge(
   (
     "primary":    $primary,
-    "accent":     #a7b510,
+// 自定義顏色
+    // "accent":     #a7b510,
     "barMain":    #0f3057,
-    "barSecond": #00587A,
-    "barThird":   #008891,
+    // "barSecond": #00587A,
+    // "barThird":   #008891,
+
     "secondary":  $secondary,
     "success":    $success,
     "info":       $info,
