@@ -75,10 +75,10 @@ $dark:          $gray-800 !default;
 $theme-colors: () !default;
 $theme-colors: map-merge(
   (
-    "primary":    $primary,
+    "primary":    #1a0d4a, //$primary,
 // 自定義顏色
     // "accent":     #a7b510,
-    "barMain":    #0f3057,
+    "barMain":    #1a0d4a,
     // "barSecond": #00587A,
     // "barThird":   #008891,
 
@@ -819,7 +819,7 @@ $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
 $pagination-hover-color:            $link-hover-color !default;
-$pagination-hover-bg:               $gray-200 !default;
+$pagination-hover-bg:               #00587A;//$gray-200 !default;
 $pagination-hover-border-color:     $gray-300 !default;
 
 $pagination-active-color:           $component-active-color !default;

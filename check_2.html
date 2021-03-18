@@ -12,16 +12,6 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
     <!-- googleFont -->
     <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
@@ -32,13 +22,15 @@
     <nav class="navbar navbar-expand-md navbar-light bg-transpatent">
         <div class="container">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
 
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="img/logo_1.jpg" height="50" class="d-inline-block align-top" alt="logo">
-                <span class="h4 px-2 mb-0 text-barMain font_2">Jared's Whiskey Cabinet</span>
+                <img src="img/logo_1.jpg" height="35" class="d-none d-md-block align-top" alt="logo">
+                <span class="h5 px-2 mb-0 text-barMain font_2 d-md-none">Jared's Whiskey Cabinet</span>
+                <span class="h3 px-2 mb-0 text-barMain font_2 d-none d-md-block">Jared's Whiskey Cabinet</span>
             </a>
             <div class="dropdown order-md-1">
                 <button style="cursor:pointer" class="btn btn-cart text-barMain" type="button" id="dropdownMenuButton"
@@ -83,13 +75,18 @@
                 </div>
             </div>
 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="h5 mb-0 nav-link nav_text a-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                        <a class="h5 mb-0 nav-link nav_text a-link" href="index.html">首頁 <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="h5 mb-0 nav-link nav_text a-link" href="/products_whiskey.html">
+                        <a class="h5 mb-0 nav-link nav_text a-link" href="products_whiskey.html">
                             酒櫃
                         </a>
                     </li>
@@ -106,8 +103,8 @@
     <section class="mb-3">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 bg-barMain pt-md-5 mb-md-3">
-                    <form action="" class="p-3 text-white">
+                <div class="col-md-8 pt-md-5 mb-md-3">
+                    <form action="" class="p-3 text-white bg-barMain">
                         <div class="form-row">
                             <div class="col-6 col-md-6">
                                 <h1>付款</h1>
@@ -122,87 +119,91 @@
                             </div>
                         </div>
 
-                        <label for="">卡號</label>
+                        <label for="cardNum">卡號</label>
 
                         <div class="form-row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input style="height: 50px;" type="number" class="form-control"
-                                        placeholder="xxxx-xxxxx-xxxx-xxxx">
+                                    <input type="number" class="form-control" placeholder="xxxx-xxxxx-xxxx-xxxx"
+                                        id="cardNum">
                                 </div>
                             </div>
                         </div>
 
-                        <label for="">持卡人</label>
+                        <label for="cardUser">持卡人</label>
                         <div class="form-row mb-1">
 
                             <div class="col-6 mb-1">
-                                <input style="height: 50px;" type="text" class="form-control" placeholder="姓">
+                                <input id='cardUser' type="text" class="form-control" placeholder="姓">
                             </div>
                             <div class="col-6 mb-1">
-                                <input style="height: 50px;" type="text" class="form-control" placeholder="名">
+                                <input type="text" class="form-control" placeholder="名">
                             </div>
 
                         </div>
 
-                        <label for="">有效期限</label>
+                        <label for="expiry">有效期限</label>
                         <div class="form-row mb-1">
 
                             <div class="col-6 mb-1">
-                                <input style="height: 50px;" type="text" class="form-control" placeholder="month">
+                                <input id="expiry" type="text" class="form-control" placeholder="月">
                             </div>
                             <div class="col-6 mb-1">
-                                <input style="height: 50px;" type="text" class="form-control" placeholder="year">
+                                <input type="text" class="form-control" placeholder="年">
                             </div>
 
                         </div>
 
-                        <label for="">驗證碼</label>
+                        <label for="password">驗證碼</label>
 
                         <div class="form-row">
 
                             <div class="col-12">
-                                <input style="height: 50px" type="number" class="form-control" placeholder="XXX">
+                                <input id="password" type="number" class="form-control" placeholder="XXX">
                             </div>
 
                         </div>
                     </form>
 
-                    <a class="row" href="check_3.html">
-                        <div class="bg-warning w-100 text-center text-white">
-                            <h1>Next</h1>
+                    <a class="" href="check_3.html" style="text-decoration:none;">
+                        <div class="bg-barSecond btn rounded-0 w-100 text-center text-white p-1">
+                            <h2>Next</h2>
                         </div>
                     </a>
                 </div>
 
-                <div class="d-none d-md-block col-md-4">
-                    <div class="bg-light text-barSecond border mb-3">
+                <div class="d-none d-md-block col-md-4 mb-3">
+                    <div class="bg-light text-barSecond border border-barMain mb-3">
+
                         <div class="p-3 text-center border-bottom border-barMain">
                             <h2>訂單金額</h2>
                         </div>
 
-                        <div class="p-1 d-flex justify-content-between">
+                        <div class="p-3 d-flex justify-content-between">
                             <span>小計</span>
                             <span>NT $9,200</span>
                         </div>
-                        <div class="p-1 d-flex justify-content-between">
+                        <div class="p-3 d-flex justify-content-between">
                             <span>運費</span>
                             <span>NT $300</span>
                         </div>
-                        <div class="h3 p-1 d-flex justify-content-between">
+
+                        <hr class="bg-barMain" style="height:1px">
+
+                        <div class="h5 p-3 d-flex justify-content-end">
                             <span>總計</span>
                             <span>NT $9,500</span>
                         </div>
 
                     </div>
 
-                    <div class="bg-light text-barSecond border">
+                    <div class="bg-light text-barSecond border border-barMain">
 
-                        <div class="p-2 text-center border-bottom border-barMain">
+                        <div class="p-3 text-center border-bottom border-barMain">
                             <h2>購物清單</h2>
                         </div>
 
-                        <div class="row p-1">
+                        <div class="row p-3">
                             <div class="col-6">
                                 <div class="bg-cover h-100" style="background-image: url('img/product_4.jpg');"></div>
                             </div>
@@ -215,7 +216,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row p-1">
+                        <div class="row p-3">
                             <div class="col-6">
                                 <div class="bg-cover h-100" style="background-image: url('img/product_5.jpg');"></div>
                             </div>
@@ -229,9 +230,6 @@
                             </div>
                         </div>
 
-
-
-
                     </div>
                 </div>
 
@@ -241,8 +239,6 @@
 
         </div>
     </section>
-
-
 
     <section class="bg-barMain py-5">
         <div class="container">
@@ -264,7 +260,52 @@
             </div>
         </div>
     </section>
+    <footer class="bg-light p-2">
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-8">
+                    <div class="row">
+                        <div class="h2 col-12 mb-3 mb-5 mb-md-7">
+                            <span>Jared's Whiskey Cabinet</span>
+                        </div>
+                        <div class="col-12 d-flex flex-column mb-3">
+                            <span>Tel: 07-571-8168</span>
+                            <span>Email: Rudrunking@gmail.com</span>
+                            <span>Address: ChiJin Dist, KH City,Taiwan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block writting-md-vertical spacing h2">
+                    <div>今天是個...</div>
+                    <div> 買醉的日子</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-barMain">
+                    <i class="fab fa-facebook fa-2x mr-1">
+                    </i>
+                    <i class="fab fa-instagram fa-2x">
+                    </i>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <span> @2021 Jared's Whiskey Cabinet All rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 </body>
 
