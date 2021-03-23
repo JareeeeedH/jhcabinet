@@ -74,8 +74,8 @@ body{
 }
 
 
-// 少部分使用到的顏色、比免於變數自定義、以class直接製作。
-$barSecond: #00587A;
+// 少部分使用到的顏色、避免於bootstrap變數自定義、以class直接製作。
+$barSecond: rgba(65, 99, 66,1);
 .bg-barSecond {background-color: $barSecond};
 .text-barSecond {color: $barSecond};
 

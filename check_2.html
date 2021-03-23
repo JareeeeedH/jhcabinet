@@ -22,18 +22,21 @@
     <nav class="navbar navbar-expand-md navbar-light bg-transpatent">
         <div class="container">
 
-            
+
             <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button> -->
 
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="img/logo_1.jpg" height="35" class="d-none d-md-block align-top" alt="logo">
-                <span class="h5 px-2 mb-0 text-barMain font_2 d-md-none">Jared's Whiskey Cabinet</span>
-                <span class="h3 px-2 mb-0 text-barMain font_2 d-none d-md-block">Jared's Whiskey Cabinet</span>
+                <span class="h5 px-2 mb-0 text-primary font_2 d-md-none">Jared's Whiskey Cabinet</span>
+                <span class="h3 px-2 mb-0 text-primary font_2 d-none d-md-block">Jared's Whiskey Cabinet</span>
             </a>
-            <div class="dropdown order-md-1">
-                <button style="cursor:pointer" class="btn btn-cart text-barMain" type="button" id="dropdownMenuButton"
+
+            <!-- 購物車 -->
+            <!-- 電腦版購物車、有dropdown -->
+            <div class="dropdown order-md-1 d-none d-md-block">
+                <button style="cursor:pointer" class="btn btn-cart text-primary" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown">
                     <i class="fas fa-wine-bottle fa-2x abs"></i>
                     <span class="badge badge-danger">2</span>
@@ -71,8 +74,16 @@
                             <td class="h4 text-right font-weight-bold">9,200</td>
                         </tfoot>
                     </table>
-                    <a class="btn btn-barMain btn-sm btn-block" href="cart.html">結帳</a>
+                    <a class="btn btn-primary btn-sm btn-block" href="cart.html">結帳</a>
                 </div>
+            </div>
+
+            <!-- 手機板沒有dropDown -->
+            <div class="dropdown order-md-1 d-md-none">
+                <a style="cursor:pointer" class="btn btn-cart text-primary" href="cart.html">
+                    <i class="fas fa-wine-bottle fa-2x abs"></i>
+                    <span class="badge badge-danger">2</span>
+                </a>
             </div>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -104,7 +115,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 pt-md-5 mb-md-3">
-                    <form action="" class="p-3 text-white bg-barMain">
+                    <form action="" class="p-3 text-white bg-primary">
                         <div class="form-row">
                             <div class="col-6 col-md-6">
                                 <h1>付款</h1>
@@ -165,17 +176,15 @@
                         </div>
                     </form>
 
-                    <a class="" href="check_3.html" style="text-decoration:none;">
-                        <div class="bg-barSecond btn rounded-0 w-100 text-center text-white p-1">
-                            <h2>Next</h2>
-                        </div>
+                    <a href="check_3.html" style="text-decoration:none;">
+                        <span class='bg-barSecond btn rounded-0 w-100 text-center text-white p-3'>下一步</span>
                     </a>
                 </div>
 
                 <div class="d-none d-md-block col-md-4 mb-3">
-                    <div class="bg-light text-barSecond border border-barMain mb-3">
+                    <div class="bg-light text-barSecond border border-primary mb-3">
 
-                        <div class="p-3 text-center border-bottom border-barMain">
+                        <div class="p-3 text-center border-bottom border-primary">
                             <h2>訂單金額</h2>
                         </div>
 
@@ -188,7 +197,7 @@
                             <span>NT $300</span>
                         </div>
 
-                        <hr class="bg-barMain" style="height:1px">
+                        <hr class="bg-primary">
 
                         <div class="h5 p-3 d-flex justify-content-end">
                             <span>總計</span>
@@ -197,9 +206,9 @@
 
                     </div>
 
-                    <div class="bg-light text-barSecond border border-barMain">
+                    <div class="bg-light text-barSecond border border-primary">
 
-                        <div class="p-3 text-center border-bottom border-barMain">
+                        <div class="p-3 text-center border-bottom border-primary">
                             <h2>購物清單</h2>
                         </div>
 
@@ -240,7 +249,7 @@
         </div>
     </section>
 
-    <section class="bg-barMain py-5">
+    <section class="bg-primary py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-5 d-flex align-items-center justify-content-center mb-3">
@@ -249,7 +258,7 @@
                 </div>
                 <div class="col-md-5">
                     <div class="d-flex justify-content-between align-items-center bg-light">
-                        <label for="subicon" class="px-3 mb-0 text-success d-flex align-items-center text-barSecond">
+                        <label for="subicon" class="px-3 mb-0 text-primary d-flex align-items-center text-barSecond">
                             <i class="far fa-envelope-open fa-2x"></i>
                         </label>
                         <input id="subicon" type="text;"
@@ -283,7 +292,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-barMain">
+                <div class="col-md-6 text-primary">
                     <i class="fab fa-facebook fa-2x mr-1">
                     </i>
                     <i class="fab fa-instagram fa-2x">

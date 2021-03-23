@@ -21,18 +21,21 @@
     <nav class="navbar navbar-expand-md navbar-light bg-transpatent">
         <div class="container">
 
-            
+
             <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button> -->
 
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="img/logo_1.jpg" height="35" class="d-none d-md-block align-top" alt="logo">
-                <span class="h5 px-2 mb-0 text-barMain font_2 d-md-none">Jared's Whiskey Cabinet</span>
-                <span class="h3 px-2 mb-0 text-barMain font_2 d-none d-md-block">Jared's Whiskey Cabinet</span>
+                <span class="h5 px-2 mb-0 text-primary font_2 d-md-none">Jared's Whiskey Cabinet</span>
+                <span class="h3 px-2 mb-0 text-primary font_2 d-none d-md-block">Jared's Whiskey Cabinet</span>
             </a>
-            <div class="dropdown order-md-1">
-                <button style="cursor:pointer" class="btn btn-cart text-barMain" type="button" id="dropdownMenuButton"
+
+            <!-- 購物車 -->
+            <!-- 電腦版購物車、有dropdown -->
+            <div class="dropdown order-md-1 d-none d-md-block">
+                <button style="cursor:pointer" class="btn btn-cart text-primary" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown">
                     <i class="fas fa-wine-bottle fa-2x abs"></i>
                     <span class="badge badge-danger">2</span>
@@ -70,10 +73,19 @@
                             <td class="h4 text-right font-weight-bold">9,200</td>
                         </tfoot>
                     </table>
-                    <a class="btn btn-barMain btn-sm btn-block" href="cart.html">結帳</a>
+                    <a class="btn btn-primary btn-sm btn-block" href="cart.html">結帳</a>
                 </div>
             </div>
 
+            <!-- 手機板沒有dropDown -->
+            <div class="dropdown order-md-1 d-md-none">
+                <a style="cursor:pointer" class="btn btn-cart text-primary" href="cart.html">
+                    <i class="fas fa-wine-bottle fa-2x abs"></i>
+                    <span class="badge badge-danger">2</span>
+                </a>
+            </div>
+
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -103,8 +115,8 @@
         <div class="row">
             <div class="col-md-8">
 
-                <h3 class="text-center p-1 text-barMain font-weight-bold">購物車</h3>
-                <hr class="bg-barMain" style="width: 90px; height:2px ">
+                <h3 class="text-center p-1 text-primary font-weight-bold">購物車</h3>
+                <hr class="bg-primary" style="width: 90px; height:2px ">
 
                 <div class="container border-bottom py-3">
                     <div class="row justify-content-between align-items-center mb-3">
@@ -125,11 +137,11 @@
                             <div class="d-flex align-items-center" style="width:145px">
                                 <div class="input-group w-100">
                                     <div class="input-group-prepend">
-                                        <button class="btn btn-outline-barMain rounded-0 px-4">-</button>
+                                        <button id="item1_btn_1" class="btn btn-outline-primary rounded-0 px-4">-</button>
                                     </div>
-                                    <input type="number" class="p-0 text-center border-barMain form-control" value="6">
+                                    <input id='item1' type="text" class="p-0 text-center border-primary form-control" value="6">
                                     <div class="input-group-append">
-                                        <button class="btn btn-outline-barMain rounded-0 px-4">+</button>
+                                        <button id="item1_btn_2" class="btn btn-outline-primary rounded-0 px-4">+</button>
                                     </div>
                                 </div>
                             </div>
@@ -171,11 +183,11 @@
                             <div class="d-flex align-items-center" style="width:145px">
                                 <div class="input-group w-100">
                                     <div class="input-group-prepend">
-                                        <button class="btn btn-outline-barMain rounded-0 px-4">-</button>
+                                        <button id="item2_btn_1" class="btn btn-outline-primary rounded-0 px-4">-</button>
                                     </div>
-                                    <input type="number" class="p-0 text-center border-barMain form-control" value="2">
+                                    <input id='item2' type="text" class="p-0 text-center border-primary form-control" value="2">
                                     <div class="input-group-append">
-                                        <button class="btn btn-outline-barMain rounded-0 px-4">+</button>
+                                        <button id="item2_btn_2" class="btn btn-outline-primary rounded-0 px-4">+</button>
                                     </div>
                                 </div>
                             </div>
@@ -199,8 +211,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 text-white">
-                <div class="bg-barMain p-3">
+            <div class="col-md-4 text-white mb-3">
+                <div class="bg-primary p-3">
                     <h3 class="text-center font-weight-bold">訂單摘要</h3>
                     <hr style="border-top: 2px solid white">
                     <div class="p-3 d-flex justify-content-between">
@@ -213,23 +225,21 @@
                     </div>
 
                     <hr class="bg-white" style="height:1px">
-                    
+
                     <div class="h5 p-3 d-flex justify-content-between">
                         <span>總計</span>
                         <span>NT $9,500</span>
                     </div>
                 </div>
                 <a href="check_1.html" style="text-decoration:none;">
-                    <div class="text-center w-100 btn bg-barSecond rounded-0">
-                        <h3 class='mb-0 p-1 text-white'>結帳</h3>
-                    </div>
+                   <span class='p-3 btn mb-0 text-white w-100 bg-barSecond rounded-0'>結帳</span>
                 </a>
 
             </div>
         </div>
     </div>
 
-    <section class="bg-barMain py-5">
+    <section class="bg-primary py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-5 d-flex align-items-center justify-content-center mb-3">
@@ -238,7 +248,7 @@
                 </div>
                 <div class="col-md-5">
                     <div class="d-flex justify-content-between align-items-center bg-light">
-                        <label for="subicon" class="px-3 mb-0 text-barMain d-flex align-items-center text-barSecond">
+                        <label for="subicon" class="px-3 mb-0 text-primary d-flex align-items-center text-barSecond">
                             <i class="far fa-envelope-open fa-2x"></i>
                         </label>
                         <input id="subicon" type="text;"
@@ -272,7 +282,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-barMain">
+                <div class="col-md-6 text-primary">
                     <i class="fab fa-facebook fa-2x mr-1">
                     </i>
                     <i class="fab fa-instagram fa-2x">
@@ -295,6 +305,44 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
+
+        <script>
+
+            // 點擊更改數量的JS
+            var item1 = document.getElementById('item1')
+            var itemBtn1 = document.getElementById('item1_btn_1')
+            var itemBtn2 = document.getElementById('item1_btn_2')
+            itemBtn1.onclick= function(){
+                
+                if( item1.value <=1) {
+                    item1.value = 1;
+                }else{
+                    item1.value = item1.value -1;
+                }
+            }
+
+            itemBtn2.onclick= function(){
+                item1.value = parseInt(item1.value) +1
+            }
+
+            // 
+            var item2 = document.getElementById('item2')
+            var item2Btn1 = document.getElementById('item2_btn_1')
+            var item2Btn2 = document.getElementById('item2_btn_2')
+            item2Btn1.onclick= function(){
+                
+                if( item2.value <=1) {
+                    item2.value = 1;
+                }else{
+                    item2.value = item2.value -1;
+                }
+            }
+
+            item2Btn2.onclick= function(){
+                item2.value = parseInt(item2.value) +1
+            }
+            
+        </script>
 </body>
 
 </html>

@@ -23,18 +23,22 @@
     <nav class="navbar navbar-expand-md navbar-light bg-transpatent">
         <div class="container">
 
-            
+
             <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button> -->
 
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="img/logo_1.jpg" height="35" class="d-none d-md-block align-top" alt="logo">
-                <span class="h5 px-2 mb-0 text-barMain font_2 d-md-none">Jared's Whiskey Cabinet</span>
-                <span class="h3 px-2 mb-0 text-barMain font_2 d-none d-md-block">Jared's Whiskey Cabinet</span>
+                <span class="h5 px-2 mb-0 text-primary font_2 d-md-none">Jared's Whiskey Cabinet</span>
+                <span class="h3 px-2 mb-0 text-primary font_2 d-none d-md-block">Jared's Whiskey Cabinet</span>
             </a>
-            <div class="dropdown order-md-1">
-                <button style="cursor:pointer" class="btn btn-cart text-barMain" type="button" id="dropdownMenuButton"
+
+
+            <!-- 購物車 -->
+            <!-- 電腦版購物車、有dropdown -->
+            <div class="dropdown order-md-1 d-none d-md-block">
+                <button style="cursor:pointer" class="btn btn-cart text-primary" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown">
                     <i class="fas fa-wine-bottle fa-2x abs"></i>
                     <span class="badge badge-danger">2</span>
@@ -72,8 +76,16 @@
                             <td class="h4 text-right font-weight-bold">9,200</td>
                         </tfoot>
                     </table>
-                    <a class="btn btn-barMain btn-sm btn-block" href="cart.html">結帳</a>
+                    <a class="btn btn-primary btn-sm btn-block" href="cart.html">結帳</a>
                 </div>
+            </div>
+
+            <!-- 手機板沒有dropDown -->
+            <div class="dropdown order-md-1 d-md-none">
+                <a style="cursor:pointer" class="btn btn-cart text-primary" href="cart.html">
+                    <i class="fas fa-wine-bottle fa-2x abs"></i>
+                    <span class="badge badge-danger">2</span>
+                </a>
             </div>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -106,10 +118,10 @@
             <div class="row">
                 <div class="col-md-8 mb-md-3">
 
-                    <form action="" class="p-3 text-white bg-barMain">
+                    <form action="" class="p-3 text-white bg-primary">
                         <div class="form-row">
                             <div class="col-6 col-md-6">
-                                <h1>Delivery</h1>
+                                <h1>運送</h1>
                             </div>
                             <div class="col-6 col-md-6 d-flex align-items-center px-0">
                                 <div class="d-flex w-100 justify-content-between line">
@@ -123,41 +135,38 @@
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="fn">First Name</label>
-                                    <input type="text" class="form-control"
-                                        placeholder="FirstName" id="fn">
+                                    <label for="fn">姓</label>
+                                    <input type="text" class="form-control" placeholder="姓" id="fn">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="ln">Last Name</label>
-                                    <input type="text" class="form-control"
-                                        placeholder="LastName" id="ln">
+                                    <label for="ln">名</label>
+                                    <input type="text" class="form-control" placeholder="名" id="ln">
                                 </div>
                             </div>
 
                         </div>
 
-                        <label for="tel">Tel</label>
+                        <label for="tel">電話</label>
 
                         <div class="form-row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="tel" class="form-control"
-                                        placeholder="09XX-xxx-xxx" id='tel'>
+                                    <input type="tel" class="form-control" placeholder="09xx-xxx-xxx" id='tel'>
                                 </div>
                             </div>
                         </div>
 
-                        <label for="city">Address</label>
+                        <label for="city">地址</label>
 
                         <div class="form-row">
 
                             <div class="col-6">
                                 <div class="form-group">
                                     <select name="city" class="form-control">
-                                        <option value="KH">Kaohsiung</option>
-                                        <option value="Taipei">Taipei</option>
+                                        <option value="KH">高雄市</option>
+                                        <option value="Taipei">台北市</option>
                                     </select>
                                 </div>
                             </div>
@@ -166,32 +175,30 @@
                             <div class="col-6">
                                 <div class="form-group">
                                     <select name="dict" class="form-control">
-                                        <option value="happy">Happy district</option>
-                                        <option value="drink">Drinking district</option>
+                                        <option value="happy">幸福區</option>
+                                        <option value="drink">光榮區</option>
                                     </select>
                                 </div>
                             </div>
 
                             <div class="col-12">
-                                <input type="text" class="form-control" placeholder="address" id="city">
+                                <input type="text" class="form-control" placeholder="地址" id="city">
                             </div>
                         </div>
                     </form>
 
                     <a href="check_2.html" style="text-decoration:none;">
-                        <div class="bg-barSecond btn rounded-0 w-100 text-center text-white">
-                            <h2>Next</h2>
-                        </div>
+                        <span class="p-3 bg-barSecond btn rounded-0 w-100 text-white">下一步</span>
                     </a>
 
-                    
+
 
                 </div>
 
                 <div class="d-none d-md-block col-md-4 mb-3">
-                    <div class="bg-light text-barSecond border border-barMain mb-3">
+                    <div class="bg-light text-barSecond border border-primary mb-3">
 
-                        <div class="p-3 text-center border-bottom border-barMain">
+                        <div class="p-3 text-center border-bottom border-primary">
                             <h2>訂單金額</h2>
                         </div>
 
@@ -204,7 +211,7 @@
                             <span>NT $300</span>
                         </div>
 
-                        <hr class="bg-barMain" style="height:1px">
+                        <hr class="bg-primary">
 
                         <div class="h5 p-3 d-flex justify-content-end">
                             <span>總計</span>
@@ -213,9 +220,9 @@
 
                     </div>
 
-                    <div class="bg-light text-barSecond border border-barMain">
+                    <div class="bg-light text-barSecond border border-primary">
 
-                        <div class="p-3 text-center border-bottom border-barMain">
+                        <div class="p-3 text-center border-bottom border-primary">
                             <h2>購物清單</h2>
                         </div>
 
@@ -261,7 +268,7 @@
 
 
 
-    <section class="bg-barMain py-5">
+    <section class="bg-primary py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-5 d-flex align-items-center justify-content-center mb-3">
@@ -270,7 +277,7 @@
                 </div>
                 <div class="col-md-5">
                     <div class="d-flex justify-content-between align-items-center bg-light">
-                        <label for="subicon" class="px-3 mb-0 text-barMain d-flex align-items-center text-barSecond">
+                        <label for="subicon" class="px-3 mb-0 text-primary d-flex align-items-center text-barSecond">
                             <i class="far fa-envelope-open fa-2x"></i>
                         </label>
                         <input id="subicon" type="text;"
@@ -305,7 +312,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-barMain">
+                <div class="col-md-6 text-primary">
                     <i class="fab fa-facebook fa-2x mr-1">
                     </i>
                     <i class="fab fa-instagram fa-2x">
@@ -327,7 +334,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        
+
 </body>
 
 </html>
