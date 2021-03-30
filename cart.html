@@ -37,7 +37,8 @@
             <div class="dropdown order-md-1 d-none d-md-block">
                 <button style="cursor:pointer" class="btn btn-cart text-primary" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown">
-                    <i class="fas fa-wine-bottle fa-2x abs"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                    
                     <span class="badge badge-danger">2</span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right bg-light" style="min-width:360px"
@@ -80,12 +81,12 @@
             <!-- 手機板沒有dropDown -->
             <div class="dropdown order-md-1 d-md-none">
                 <a style="cursor:pointer" class="btn btn-cart text-primary" href="cart.html">
-                    <i class="fas fa-wine-bottle fa-2x abs"></i>
+                    <i class="fas fa-shopping-cart"></i>
                     <span class="badge badge-danger">2</span>
                 </a>
             </div>
 
-            
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -137,18 +138,21 @@
                             <div class="d-flex align-items-center" style="width:145px">
                                 <div class="input-group w-100">
                                     <div class="input-group-prepend">
-                                        <button id="item1_btn_1" class="btn btn-outline-primary rounded-0 px-4">-</button>
+                                        <button id="item1_btn_1"
+                                            class="btn btn-outline-primary rounded-0 px-4">-</button>
                                     </div>
-                                    <input id='item1' type="text" class="p-0 text-center border-primary form-control" value="6">
+                                    <input id='item1' type="text" class="p-0 text-center border-primary form-control"
+                                        value="6">
                                     <div class="input-group-append">
-                                        <button id="item1_btn_2" class="btn btn-outline-primary rounded-0 px-4">+</button>
+                                        <button id="item1_btn_2"
+                                            class="btn btn-outline-primary rounded-0 px-4">+</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="d-none d-md-flex ml-auto">
                             <span class="h6 mb-0 mr-3">NT$ 6,000</span>
-                            <i class="fas fa-trash"></i>
+                            <a class="btn"><i class="fas fa-trash"></i></a>
                         </div>
 
                     </div>
@@ -158,7 +162,7 @@
                             <div class="d-flex justify-content-end">
                                 <div class="d-flex align-items-center">
                                     <span class="h5 mb-0 mr-5">NT$ 6,000</span>
-                                    <i class="fas fa-trash"></i>
+                                    <a class="btn"><i class="fas fa-trash"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -183,18 +187,21 @@
                             <div class="d-flex align-items-center" style="width:145px">
                                 <div class="input-group w-100">
                                     <div class="input-group-prepend">
-                                        <button id="item2_btn_1" class="btn btn-outline-primary rounded-0 px-4">-</button>
+                                        <button id="item2_btn_1"
+                                            class="btn btn-outline-primary rounded-0 px-4">-</button>
                                     </div>
-                                    <input id='item2' type="text" class="p-0 text-center border-primary form-control" value="2">
+                                    <input id='item2' type="text" class="p-0 text-center border-primary form-control"
+                                        value="2">
                                     <div class="input-group-append">
-                                        <button id="item2_btn_2" class="btn btn-outline-primary rounded-0 px-4">+</button>
+                                        <button id="item2_btn_2"
+                                            class="btn btn-outline-primary rounded-0 px-4">+</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="d-none d-md-flex ml-auto">
                             <span class="h6 mb-0 mr-3">NT$ 3,200</span>
-                            <i class="fas fa-trash"></i>
+                            <a class="btn"><i class="fas fa-trash"></i></a>
                         </div>
 
                     </div>
@@ -204,7 +211,7 @@
                             <div class="d-flex justify-content-end">
                                 <div class="d-flex align-items-center">
                                     <span class="h5 mb-0 mr-5">NT$ 3,200</span>
-                                    <i class="fas fa-trash"></i>
+                                    <a class="btn"><i class="fas fa-trash"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -231,8 +238,9 @@
                         <span>NT $9,500</span>
                     </div>
                 </div>
-                <a href="check_1.html" style="text-decoration:none;">
-                   <span class='p-3 btn mb-0 text-white w-100 bg-barSecond rounded-0'>結帳</span>
+                <a href="check_1.html" class='p-3 text-white w-100 rounded-0 btn btn-dark'
+                    style="text-decoration:none;">
+                    結帳
                 </a>
 
             </div>
@@ -251,7 +259,7 @@
                         <label for="subicon" class="px-3 mb-0 text-primary d-flex align-items-center text-barSecond">
                             <i class="far fa-envelope-open fa-2x"></i>
                         </label>
-                        <input id="subicon" type="text;"
+                        <input id="subicon" type="email"
                             style="border:none; outline:none; background-color: transparent;" class="w-100 p-2">
                         <button class="btn btn-light rounded-0 py-2"><i class="fas fa-arrow-right"></i></i></button>
                     </div>
@@ -259,6 +267,7 @@
             </div>
         </div>
     </section>
+
     <footer class="bg-light p-2">
         <div class="container mb-3">
             <div class="row">
@@ -276,7 +285,7 @@
                 </div>
                 <div class="col-md-4 d-none d-md-block writting-md-vertical spacing h2">
                     <div>今天是個...</div>
-                    <div> 買醉的日子</div>
+                    <div> 品酒的日子</div>
                 </div>
             </div>
         </div>
@@ -306,43 +315,43 @@
         crossorigin="anonymous"></script>
 
 
-        <script>
+    <script>
 
-            // 點擊更改數量的JS
-            var item1 = document.getElementById('item1')
-            var itemBtn1 = document.getElementById('item1_btn_1')
-            var itemBtn2 = document.getElementById('item1_btn_2')
-            itemBtn1.onclick= function(){
-                
-                if( item1.value <=1) {
-                    item1.value = 1;
-                }else{
-                    item1.value = item1.value -1;
-                }
-            }
+        // 點擊更改數量的JS
+        var item1 = document.getElementById('item1')
+        var itemBtn1 = document.getElementById('item1_btn_1')
+        var itemBtn2 = document.getElementById('item1_btn_2')
+        itemBtn1.onclick = function () {
 
-            itemBtn2.onclick= function(){
-                item1.value = parseInt(item1.value) +1
+            if (item1.value <= 1) {
+                item1.value = 1;
+            } else {
+                item1.value = item1.value - 1;
             }
+        }
 
-            // 
-            var item2 = document.getElementById('item2')
-            var item2Btn1 = document.getElementById('item2_btn_1')
-            var item2Btn2 = document.getElementById('item2_btn_2')
-            item2Btn1.onclick= function(){
-                
-                if( item2.value <=1) {
-                    item2.value = 1;
-                }else{
-                    item2.value = item2.value -1;
-                }
-            }
+        itemBtn2.onclick = function () {
+            item1.value = parseInt(item1.value) + 1
+        }
 
-            item2Btn2.onclick= function(){
-                item2.value = parseInt(item2.value) +1
+        // 
+        var item2 = document.getElementById('item2')
+        var item2Btn1 = document.getElementById('item2_btn_1')
+        var item2Btn2 = document.getElementById('item2_btn_2')
+        item2Btn1.onclick = function () {
+
+            if (item2.value <= 1) {
+                item2.value = 1;
+            } else {
+                item2.value = item2.value - 1;
             }
-            
-        </script>
+        }
+
+        item2Btn2.onclick = function () {
+            item2.value = parseInt(item2.value) + 1
+        }
+
+    </script>
 </body>
 
 </html>

@@ -43,12 +43,16 @@ body{
 
 .a-link:hover
 {
-    border-bottom: 3px solid #0f3057;
+    border-bottom: 3px solid theme-color('primary')
 }
 
 
 .spacing{
     letter-spacing: 10px;
+}
+
+.bg-lighter{
+    background-color: rgba(255, 255, 255, 0.3)
 }
 
 .btn-cart .badge{
@@ -74,8 +78,9 @@ body{
 }
 
 
+
 // 少部分使用到的顏色、避免於bootstrap變數自定義、以class直接製作。
-$barSecond: rgba(65, 99, 66,1);
+$barSecond: rgba(35, 45, 61, 0.7);
 .bg-barSecond {background-color: $barSecond};
 .text-barSecond {color: $barSecond};
 

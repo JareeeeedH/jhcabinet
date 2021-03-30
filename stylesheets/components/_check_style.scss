@@ -1,24 +1,8 @@
-.nav_text{
-    font-weight: bold;
-}
-.bg-cover{
-    background-size: cover;
-    background-position: center center
-}
-
-.btn-cart .badge{
-    position:absolute;
-  }
 
 .jumbo-bg{
     background-image: url('../img/success.jpg');
     height: 496px;
 }
-
-.bg-lighter{
-    background-color: rgba(255, 255, 255, 0.3)
-}
-
 
 .line::after{
     content:"";
@@ -36,7 +20,7 @@
     height:20px;
     border: 1px solid white;
     border-radius: 20px;
-    background-color: #0f3057;
+    // background-color: theme-color('primary');
     z-index:1;
     
 }
@@ -55,7 +39,7 @@
     height:20px;
     border: 1px solid white;
     border-radius: 20px;
-    background-color: #0f3057;
+    // background-color: theme-color('primary');
     z-index:1;
 }
 
@@ -64,7 +48,7 @@
     height:22px;
     border: 1px solid white;
     border-radius: 20px;
-    background-color: #0f3057;
+    background-color: theme-color('primary');
     z-index:1;
     /* background-image: url('../img/done.svg'); */
 }
